@@ -1,14 +1,19 @@
 {
-  "name": "word-counter",
+  "name": "Text-AEC",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "homepage": "https://mostafaraihan.github.io/TextAEC",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
+
+  
   "dependencies": {
     "docx": "^9.5.1",
     "file-saver": "^2.0.5",
