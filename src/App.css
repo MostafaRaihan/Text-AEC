@@ -234,7 +234,7 @@ textarea {
 }
 
 .creative-footer small {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .creative-footer a {
@@ -247,7 +247,7 @@ textarea {
 
 .creative-footer a:hover {
   color: yellow;
-  font-size:1.7rem;
+  font-size:1.5rem;
 }
 
 /* ---------- Responsive ---------- */
@@ -328,9 +328,16 @@ textarea {
   .nav-2 .left-group, .nav-2 .right-group { display: flex; gap: 10px; align-items: center; }
 }
 
-/* Desktop ≥900px */
+/* ---------- Desktop ≥900px ---------- */
 @media (min-width: 900px) {
-  .editor-row { flex-direction: row-reverse; gap: 25px; align-items: flex-start; }
+  /* Editor Row */
+  .editor-row { 
+    flex-direction: row-reverse; 
+    gap: 25px; 
+    align-items: flex-start; 
+  }
+
+  /* Left & Right Sections */
   .left-section { width: 25%; display: flex; }
   .section-left-2 { display: none; }
   .right-section { width: 75%; }
@@ -343,16 +350,54 @@ textarea {
     box-shadow: inset 0 5px 15px rgba(0,0,0,0.05);
   }
 
-  .nav-2 { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-  .nav-2 .left-group, .nav-2 .right-group { display: flex; gap: 10px; align-items: center; }
+  /* Nav-2 */
+  .nav-2 { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  .nav-2 .left-group, .nav-2 .right-group { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+  }
 
-  .nav-1 { display: flex; gap: 12px; width: 100%; }
+  /* Nav-1 */
+  .nav-1 { 
+    display: flex; 
+    gap: 12px; 
+    width: 100%; 
+  }
   .nav-1 button, .nav-1 select {
     flex: 1 1 auto;
     min-width: 100px;
     max-width: 200px;
   }
 
-  .head-top { flex-direction: row; align-items: center; }
-  .head-top .search-find input { width: 180px; }
+  /* ---------- Head-top / Search & Replace ---------- */
+  .head-top { 
+    flex-direction: row;          /* এক লাইনে */
+    align-items: center;          /* vertical center */
+    justify-content: space-between; /* left & right spread */
+    gap: 20px;                    /* element গুলোর মধ্যে gap */
+    flex-wrap: nowrap;             /* line break না হোক */
+  }
+
+  .head-top h2 {
+    margin: 0;                    /* extra margin remove */
+    flex-shrink: 0;               /* h2 shrink না হোক */
+    font-size: 2rem;
+  }
+
+  .head-top .search-find {
+    display: flex;
+    flex-wrap: nowrap;             /* input+button এক লাইনে */
+    gap: 10px;                     /* input & button spacing */
+    align-items: center;
+  }
+
+  .head-top .search-find input {
+    width: auto;                  /* input natural width, button পাশে */
+  }
 }
