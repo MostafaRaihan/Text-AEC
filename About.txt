@@ -1,0 +1,12 @@
+Google Docs – collaborative, online, professional, কিন্তু voice typing & word frequency নেই।
+
+Notion – block-based editor, versatile, কিন্তু statistical analysis নেই।
+
+
+WordCloud Apps – word frequency ও visualization আছে, কিন্তু editing, voice typing, export formats নেই।
+
+✅ অর্থাৎ, অ্যাপটি এক ধরনের unique combo:
+
+Editing + Stats + Voice + Highlight + Multiple Export সব এক জায়গায়।
+
+বাজারে এমন একটি “single-page, advanced text editor with analytics” খুব কম আছে।
